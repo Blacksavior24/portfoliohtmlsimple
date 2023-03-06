@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./index.css ">
+        <title>EVQ FullStack Web Developer</title>
+        <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/portfolio-1c3ca.appspot.com/o/imagen_2023-03-01_030057337.png?alt=media&token=33f6344b-c258-498c-aafc-715a2a083a38">
+    </head>
+
+    <body>
+
+        <!-- seccion inicio-->
+
+        <section id="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="contenido-header">
+                        <h1>EVQ</h1>
+                        <nav id="nav" class="">
+                            <ul id="links">
+                                <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                                <li><a href="#sobremi">SOBRE MI</a></li>
+                                <!-- <li><a href="#proyectos">PROYECTOS</a></li> -->
+                                <li><a href="#portfolio">PROYECTOS</a></li>
+                                <li><a href="#contacto">CONTACTO</a></li>
+                            </ul>
+                        </nav>
+                       
+                        <!--Iconos del menu responsive-->
+
+                     <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                     </div> 
+
+                     <!--Iconos de las redes sociales-->
+                     <div class="redes">
+                        <a href="http://www.linkedin.com/in/vallesgastond"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/vallesgaston"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=+541133864248"><i class="fa-brands fa-whatsapp"></i></a>
+                     </div>
+                    </div>
+                </header>
+                <div class="presentacion">
+                    <p class="bienvenida">Bienvenidos</p>
+                    <h2>Soy <span>Emerson Villalta</span>, FullStack Web Developer</h2>
+                    <p class="descripcion">Full Stack Developer con formación en Ingenieria de Sistemas. Experiencia trabajando en NodeJS, React,
+                        Redux, SQL, Flask, Django, FastApi, Java entre otras tecnologías del sector. Desarrolle varios proyectos que demuestran
+                        mi experiencia.
+                      </p>
+                    <a href="#portfolio">Portafolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!--seccion sobre mi-->
+        <section id="sobremi">
+            <div class="contenedor-foto">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-1c3ca.appspot.com/o/imagen_2023-03-01_030057337.png?alt=media&token=33f6344b-c258-498c-aafc-715a2a083a38" alt="">
+            </div>
+            <div class="sobremi">
+                <p class="titulo-seccion">Sobre mi</p>
+                <!-- <h2>Hola, soy <span>Gaston Valles</span></h2>
+                <h3>FullStack Web Developer</h3> -->
+                <p>Me gusta el desarrollo de Software, soy Full Stack Developer. Me especializo en javascript(React, React Native, Redux, NodeJS), python(Flask, FastAPI, Django) orientado al backend.</p>
+                <p>También conozco de bases de datos relacionales(sql) y no relaciones(nosql), docker y desarrollo de aplicaciones móviles con kotlin.</p>
+                <p>Mi punto de interés es seguir creciendo profesionalmente. Como información extraescolar me gusta los videojuegos y las nuevas tecnologías.</p>
+                <p>Soy comprometido con lo que hago y sigo aprendiendo para mejorar cada vez más en lo que me apasiona.</p>
+                <a href="https://www.dropbox.com/scl/fi/j3mspxy21c5qqgaqjfk0h/CV-Valles-Gaston.docx?dl=0&rlkey=ofkxxs4f4nbn0z330dwr9upl5">Descargar CV</a>
+             </div>
+
+        </section>
+
+        <!--seccion habilidades-->
+        <div class="contenedor-skills" id="skills">
+            <h3>HABILIDADES</h3>
+            <div class="skill">
+                <div class="info">
+                    <!-- <div class="tech"> -->
+                        <!-- <div> -->
+                        <!-- <ul> -->
+                            <!-- <div class="separador"> -->
+                                <p>HTML</p>
+                                <img src="imagenes/icons8-html-5-48.png" />
+                            <br/>
+                            <br/>
+                            <!-- </div> -->
+                            <p>CSS</p>
+                            <img src="imagenes/icons8-css3-48.png" />
+                            <br/>
+                            <br/>
+                            <p>JavaScript</p>
+                            <img src="imagenes/icons8-javascript-48.png" />
+                            <br/>
+                            <br/>
+                            <p>React</p>
+                            <img src="imagenes/icons8-reaccionar-100.png" />
+                            <br/>
+                            <br/>
+                            <p>Postman</p>
+                            <img src="imagenes/icons8-postman-is-the-only-complete-api-development-environment-24.png" />
+                            <br/>
+                            <br/>
+                            <p>React Native</p>
+                            <img src="imagenes/icons8-reaccionar-nativo-48.png" />
+                            <br/>
+                            <br/>
+                            <p>Node JS</p>
+                            <img src="imagenes/icons8-nodejs-48.png" />
+                            <br/>
+                            <br/>
+                            <p>GitHub</p>
+                            <img src="imagenes/icons8-github-64.png" />
+                            <br/>
+                            <br/>
+                            <p>Postgresql</p>
+                            <img src="imagenes/icons8-postgresql-48.png" />
+                            <br/>
+                            <br/>
+                            <p>Git</p>
+                            <img src="imagenes/icons8-git-48.png" />
+                            <br/>
+                            <br/>
+                            <p>Linux</p>
+                            <img src="imagenes/icons8-linux-48.png" />
+                        
+                      <!-- </ul> -->
+                        <!-- </div> -->
+                    </div>
+              </div>
+                  
+</div>
+                        
+                          
+
+
+<!-- <div class="container-tech">
+    <ul>
+      <li>
+        <img src="img/html.png" alt="" />
+        <p>HTML</p>
+      </li>
+      <li>
+        <img src="img/css.png" alt="" />
+        <p>CSS</p>
+      </li>
+      <li>
+        <img src="img/javascript.png" alt="" />
+        <p>JavaScript</p>
+      </li>
+      <li>
+        <img src="img/react-2.svg" alt="" />
+        <p>React</p>
+      </li>
+      <li>
+        <img src="img/react-native-1.svg" alt="" />
+        <p>React Native</p>
+      </li>
+      <li>
+        <img src="img/nodejspnh.png" alt="" />
+        <p>Node JS</p>
+      </li>
+    </ul>
+  </div> -->
+
+        <!--seccion portfolio-->
+        <section id="portfolio">
+            <div class="titulo-seccion">
+            <h3>MIS PROYECTOS</h3>
+            </div>
+            <div class="fila">
+                <div class="proyecto">
+                    <!-- <div class="overlay"></div> -->
+                    <div class="titulo">
+                    <h4>App del clima</h4>
+                    </div>
+                    <img src="./imagenes/clima.webp" alt="">
+                    <div class="links">
+                        <a href="https://github.com/vallesgaston" target="_blank">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/posts/vallesgastond_javascript-reactjs-css-activity-6940100134957412352-GyWr?utm_source=share&utm_medium=member_desktop">
+                          <i class="fa-solid fa-earth-americas"></i>
+                        </a>
+                          
+                        
+                      </div>
+                    
+
+                </div>
+                
+                <div class="proyecto">
+                    <div class="titulo">
+                    <h4>App de Fixy</h4>
+                    </div>
+                    <img src="./imagenes/fixy2.jpeg" alt="">
+                    <div class="links">
+                        <a href="https://github.com/FedericoDib/Fixy-PF.git" target="_blank">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://lnkd.in/dAArNmrD">
+                          <i class="fa-solid fa-earth-americas"></i>
+                        </a>
+                      </div>
+            
+
+                </div>
+
+                <div class="proyecto">
+                    <!-- <div class="overlay"></div> -->
+                    <div class="titulo">
+                    <h4>App Pokemons</h4>
+                    </div>
+                    <img src="./imagenes/pokeball.png" alt="">
+                    <div class="links">
+                        <a href="https://github.com/vallesgaston/Deploy-Pokemon.git" target="_blank">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://deploy-pokemon.vercel.app/">
+                          <i class="fa-solid fa-earth-americas"></i>
+                        </a>
+                      </div>
+                    
+                </div>
+                <div class="proyecto">
+                  <!-- <div class="overlay"></div> -->
+                  <div class="titulo">
+                  <h4>App Pokemons</h4>
+                  </div>
+                  <img src="./imagenes/pokeball.png" alt="">
+                  <div class="links">
+                      <a href="https://github.com/vallesgaston/Deploy-Pokemon.git" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://deploy-pokemon.vercel.app/">
+                        <i class="fa-solid fa-earth-americas"></i>
+                      </a>
+                    </div>
+                  
+              </div>
+              <div class="proyecto">
+                <!-- <div class="overlay"></div> -->
+                <div class="titulo">
+                <h4>App Pokemons</h4>
+                </div>
+                <img src="./imagenes/pokeball.png" alt="">
+                <div class="links">
+                    <a href="https://github.com/vallesgaston/Deploy-Pokemon.git" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://deploy-pokemon.vercel.app/">
+                      <i class="fa-solid fa-earth-americas"></i>
+                    </a>
+                  </div>
+                
+            </div>
+            <div class="proyecto">
+              <!-- <div class="overlay"></div> -->
+              <div class="titulo">
+              <h4>App Pokemons</h4>
+              </div>
+              <img src="./imagenes/pokeball.png" alt="">
+              <div class="links">
+                  <a href="https://github.com/vallesgaston/Deploy-Pokemon.git" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://deploy-pokemon.vercel.app/">
+                    <i class="fa-solid fa-earth-americas"></i>
+                  </a>
+                </div>
+              
+          </div>
+          <div class="proyecto">
+            <!-- <div class="overlay"></div> -->
+            <div class="titulo">
+            <h4>App Pokemons</h4>
+            </div>
+            <img src="./imagenes/pokeball.png" alt="">
+            <div class="links">
+                <a href="https://github.com/vallesgaston/Deploy-Pokemon.git" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://deploy-pokemon.vercel.app/">
+                  <i class="fa-solid fa-earth-americas"></i>
+                </a>
+              </div>
+            
+        </div>
+        <div class="proyecto">
+          <!-- <div class="overlay"></div> -->
+          <div class="titulo">
+          <h4>App Pokemons</h4>
+          </div>
+          <img src="./imagenes/pokeball.png" alt="">
+          <div class="links">
+              <a href="https://github.com/vallesgaston/Deploy-Pokemon.git" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://deploy-pokemon.vercel.app/">
+                <i class="fa-solid fa-earth-americas"></i>
+              </a>
+            </div>
+          
+      </div>
+
+              </div>
+
+                <!-- <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="./imagenes/fixy2.jpeg" alt="">
+                    <div class="info">
+                        <h4>Descripcion del Proyecto</h4>
+                        <p>App del Clima</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="./imagenes/poke3.png" alt="">
+                    <div class="info">
+                        <h4>Descripcion del Proyecto</h4>
+                        <p>App del Clima</p>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <!--seccion contacto-->
+        <section id="contacto">
+            <h3 class="titulo-seccion">Contacto</h3>
+            <div class="contenedor-form">
+                <form action="https://formsubmit.co/emersonevillaltaq@gmail.com" method="POST">
+                    <div class="fila mitad">
+                        <input type="text" name= "name" placeholder="Nombre Completo" class="input-mitad" autocomplete="off">
+                        <input type="email" name="email" placeholder="Direccion de Email" class="input-mitad" autocomplete="off" >
+                    </div>
+                    <div class="fila">
+                        <input type="text" placeholder="Tema..." class="input-full" autocomplete="off">
+                    </div>
+                    <div class="fila">
+                        <textarea name="name" id="" cols="30" rows="10" placeholder="Tu mensaje ..." class="input-full"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                </form>
+            </div>
+        </section>
+
+        <!--seccion footer-->
+        <footer>
+            <p>Todos los derechos reservados - 2022</p>
+            <div class="redes">
+                <a href="http://www.linkedin.com/in/vallesgastond"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/vallesgaston"><i class="fa-brands fa-github"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+541133864248"><i class="fa-brands fa-whatsapp"></i></a>
+             </div>
+
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>
